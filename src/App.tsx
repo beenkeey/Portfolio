@@ -23,6 +23,7 @@ const experiences = [
   "Создал корпоративную платформу коммуникации (Flask + WebSockets) для работы в реальном времени.",
   "Спроектировал систему самообслуживания для региональных подразделений.",
   "Работал с инфраструктурой: Linux (Astra), Docker, Nginx, Apache, PostgreSQL, MariaDB, Windows Server (AD).",
+  "Участвовал в проектировании архитектуры систем и формировании технических требований.",
 ];
 
 const projects = [
@@ -30,7 +31,7 @@ const projects = [
     name: "Система автоматизации KPI",
     problem: "Ручная обработка KPI занимала много времени и приводила к задержкам в отчетности.",
     solution: "Разработал backend-логику с автоматизацией процессов и интеграциями через API.",
-    impact: "Ускорил формирование отчетов и повысил прозрачность ключевых показателей.",
+    impact: "Сократил время формирования отчетов и повысил прозрачность KPI для управленческих решений.",
     stack: ["Python", "Django", "REST API", "PostgreSQL"],
   },
   {
@@ -54,6 +55,7 @@ const skillGroups = [
   { title: "Базы данных", icon: Database, values: ["PostgreSQL", "MariaDB"] },
   { title: "DevOps", icon: Terminal, values: ["Docker", "Linux", "Nginx"] },
   { title: "Другое", icon: GitBranch, values: ["Git", "WebSockets", "AJAX"] },
+  { title: "Языки", icon: Globe, values: ["Русский (родной)", "Английский B2"] }
 ];
 
 function App() {
@@ -131,7 +133,7 @@ function App() {
               transition={{ duration: 0.7, delay: 0.85 }}
             >
               <div className="glass-card rounded-lg px-4 py-2">Возраст: 24 года</div>
-              <div className="glass-card rounded-lg px-4 py-2">Город проживания: Красноряск</div>
+              <div className="glass-card rounded-lg px-4 py-2">Город проживания: Красноярск</div>
               <div className="glass-card rounded-lg px-4 py-2">2+ года коммерческого опыта</div>
             </motion.div>
           </div>
@@ -142,7 +144,8 @@ function App() {
             <SectionTitle
               eyebrow="Обо мне"
               title="Инженер с практическим опытом backend-разработки"
-              subtitle="Разрабатываю backend-сервисы, автоматизирую процессы и создаю надежные системы для реальных бизнес-задач. Работаю с учетом производительности, масштабируемости и стабильности."
+              subtitle="Разрабатываю backend-сервисы, автоматизирую процессы и создаю надежные системы для реальных бизнес-задач. Работаю с учетом производительности, масштабируемости и стабильности. Также отличаюсь высокой обучаемостью, вниманием к деталям и ориентацией на результат.
+Умею эффективно работать в команде и быстро адаптироваться к новым задачам и технологиям."
             />
           </Reveal>
         </section>
@@ -238,12 +241,63 @@ function App() {
           <Reveal>
             <SectionTitle eyebrow="Образование" title="Образование и развитие" />
           </Reveal>
+
           <div className="grid gap-4 md:grid-cols-3">
-            {["Бакалавр", "Магистр", "Аспирантура (в процессе)"].map((stage, idx) => (
-              <Reveal key={stage} delay={idx * 0.08}>
+            {[
+              {
+                degree: "Бакалавр",
+                desc: "Автоматизация технологических процессов и производств",
+                year: "2023",
+              },
+              {
+                degree: "Магистр",
+                desc: "Киберфизические системы управления производством",
+                year: "2025",
+              },
+              {
+                degree: "Аспирантура (в процессе)",
+                desc: "Теоретическая информатика и кибернетика",
+                year: "2028",
+              },
+            ].map((item, idx) => (
+              <Reveal key={item.degree} delay={idx * 0.08}>
+                <div className="glass-card rounded-2xl p-5 transition hover:-translate-y-1">
+
+                  <p className="mb-2 text-xs text-slate-400">{item.year}</p>
+
+                  <h3 className="text-lg font-semibold mb-2">
+                    {item.degree}
+                  </h3>
+
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    {item.desc}
+                  </p>
+
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
+        <section id="courses" className="py-20">
+          <Reveal>
+            <SectionTitle
+              eyebrow="Дополнительно"
+              title="Повышение квалификации"
+              subtitle="Дополнительное обучение и развитие профессиональных навыков"
+            />
+          </Reveal>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {[
+              "Основы Astra Linux (2025)",
+              "Разработка интерактивных веб-интерфейсов (2024)",
+              "Управление в IT сфере (2024)",
+              "Верстка веб-приложений (2024)",
+            ].map((course, idx) => (
+              <Reveal key={course} delay={idx * 0.06}>
                 <div className="glass-card rounded-2xl p-5">
-                  <p className="mb-2 text-xs tracking-[0.2em] text-slate-400 uppercase">Stage {idx + 1}</p>
-                  <h3 className="text-lg font-semibold">{stage}</h3>
+                  <p className="text-sm text-slate-200">{course}</p>
                 </div>
               </Reveal>
             ))}
