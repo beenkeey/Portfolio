@@ -18,42 +18,42 @@ import { ScrollProgress } from "./components/ScrollProgress";
 import { SectionTitle } from "./components/SectionTitle";
 
 const experiences = [
-  "Built backend systems for KPI automation, reducing manual reporting load and improving decision speed.",
-  "Integrated 1C through REST APIs, enabling reliable data synchronization across internal workflows.",
-  "Developed a corporate communication platform (Flask + WebSockets) for real-time team coordination.",
-  "Designed a self-service solution for regional departments, improving service accessibility at scale.",
-  "Operated infrastructure across Linux (Astra), Docker, Nginx, Apache, PostgreSQL, MariaDB, and Windows Server AD.",
+  "Разрабатывал backend-системы для автоматизации KPI, снижая ручную нагрузку и ускоряя принятие решений.",
+  "Интегрировал 1С через REST API, обеспечив стабильную синхронизацию данных между системами.",
+  "Создал корпоративную платформу коммуникации (Flask + WebSockets) для работы в реальном времени.",
+  "Спроектировал систему самообслуживания для региональных подразделений.",
+  "Работал с инфраструктурой: Linux (Astra), Docker, Nginx, Apache, PostgreSQL, MariaDB, Windows Server (AD).",
 ];
 
 const projects = [
-  {
-    name: "Internal KPI Automation System",
-    problem: "Manual KPI processing consumed time and created reporting delays.",
-    solution: "Designed backend automation flows with integration endpoints and scheduled processing.",
-    impact: "Improved reporting consistency and accelerated management-level visibility of key metrics.",
+ {
+    name: "Система автоматизации KPI",
+    problem: "Ручная обработка KPI занимала много времени и приводила к задержкам в отчетности.",
+    solution: "Разработал backend-логику с автоматизацией процессов и интеграциями через API.",
+    impact: "Ускорил формирование отчетов и повысил прозрачность ключевых показателей.",
     stack: ["Python", "Django", "REST API", "PostgreSQL"],
   },
   {
-    name: "Corporate Communication Platform",
-    problem: "Internal teams lacked fast communication channels for operational updates.",
-    solution: "Built a real-time communication service with Flask and WebSockets for internal use.",
-    impact: "Enabled instant coordination between departments and reduced response latency.",
+    name: "Корпоративная платформа коммуникации",
+    problem: "Отсутствие быстрых каналов взаимодействия между подразделениями.",
+    solution: "Реализовал сервис с real-time коммуникацией на Flask и WebSockets.",
+    impact: "Снизил задержки в коммуникации и повысил эффективность взаимодействия.",
     stack: ["Flask", "WebSockets", "AJAX", "Linux"],
   },
   {
-    name: "Self-Service Portal for Government Services",
-    problem: "Regional units needed a streamlined way to execute recurring service workflows.",
-    solution: "Implemented a self-service portal architecture with secure backend services and integrations.",
-    impact: "Increased autonomy of regional teams and reduced routine workload on central staff.",
+    name: "Портал самообслуживания",
+    problem: "Региональные подразделения не имели удобного инструмента для работы с сервисами.",
+    solution: "Разработал архитектуру портала с безопасной backend-логикой и интеграциями.",
+    impact: "Повысил автономность подразделений и снизил нагрузку на центральные отделы.",
     stack: ["Python", "REST API", "MariaDB", "Nginx"],
   },
 ];
 
 const skillGroups = [
   { title: "Backend", icon: ServerCog, values: ["Python", "Django", "Flask", "REST API"] },
-  { title: "Databases", icon: Database, values: ["PostgreSQL", "MariaDB"] },
+  { title: "Базы данных", icon: Database, values: ["PostgreSQL", "MariaDB"] },
   { title: "DevOps", icon: Terminal, values: ["Docker", "Linux", "Nginx"] },
-  { title: "Other", icon: GitBranch, values: ["Git", "WebSockets", "AJAX"] },
+  { title: "Другое", icon: GitBranch, values: ["Git", "WebSockets", "AJAX"] },
 ];
 
 function App() {
@@ -79,7 +79,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Software Engineering Portfolio
+              Портфолио инженера-программиста
             </motion.p>
             <motion.h1
               className="text-4xl leading-tight font-semibold md:text-6xl"
@@ -95,7 +95,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.42 }}
             >
-              Software Engineer / Backend Developer
+              Инженер-программист / Backend-разработчик
             </motion.p>
             <motion.p
               className="mt-7 max-w-3xl text-base leading-relaxed text-slate-300 md:text-xl"
@@ -103,8 +103,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.54 }}
             >
-              I build scalable systems, automate business processes, and turn complex workflows into efficient
-              digital solutions.
+              Разрабатываю масштабируемые системы, автоматизирую бизнес-процессы и превращаю сложные задачи в эффективные цифровые решения.
             </motion.p>
             <motion.div
               className="mt-10 flex flex-wrap gap-4"
@@ -116,13 +115,13 @@ function App() {
                 href="#projects"
                 className="rounded-xl bg-indigo-500 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-indigo-400"
               >
-                View Projects
+                Мои проекты
               </a>
               <a
                 href="#contact"
                 className="rounded-xl border border-white/25 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-white/10"
               >
-                Contact Me
+                Связаться со мной
               </a>
             </motion.div>
             <motion.div
@@ -131,9 +130,9 @@ function App() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.85 }}
             >
-              <div className="glass-card rounded-lg px-4 py-2">Age: 24</div>
-              <div className="glass-card rounded-lg px-4 py-2">Location: Krasnoyarsk</div>
-              <div className="glass-card rounded-lg px-4 py-2">2+ years production experience</div>
+              <div className="glass-card rounded-lg px-4 py-2">Возраст: 24 года</div>
+              <div className="glass-card rounded-lg px-4 py-2">Город проживания: Красноряск</div>
+              <div className="glass-card rounded-lg px-4 py-2">2+ года коммерческого опыта</div>
             </motion.div>
           </div>
         </section>
@@ -141,9 +140,9 @@ function App() {
         <section id="about" className="py-20">
           <Reveal>
             <SectionTitle
-              eyebrow="About Me"
-              title="Production-minded engineer with strong backend focus"
-              subtitle="I design robust backend services, automate routine processes, and connect systems into reliable digital workflows. My work is grounded in real production constraints: performance, maintainability, and operational stability."
+              eyebrow="Обо мне"
+              title="Инженер с практическим опытом backend-разработки"
+              subtitle="Разрабатываю backend-сервисы, автоматизирую процессы и создаю надежные системы для реальных бизнес-задач. Работаю с учетом производительности, масштабируемости и стабильности."
             />
           </Reveal>
         </section>
@@ -151,9 +150,9 @@ function App() {
         <section id="experience" className="py-20">
           <Reveal>
             <SectionTitle
-              eyebrow="Experience"
-              title="KGBU MFC (Russia) — Software Engineer"
-              subtitle="2+ years building internal systems that improve operational speed and service quality."
+              eyebrow="Опыт"
+              title="КГБУ МФЦ — Инженер-программист"
+              subtitle="Более 2 лет разработки внутренних систем, повышающих эффективность бизнес-процессов."
             />
           </Reveal>
           <div className="relative ml-3 border-l border-white/20 pl-8">
@@ -171,9 +170,9 @@ function App() {
         <section id="skills" className="py-20">
           <Reveal>
             <SectionTitle
-              eyebrow="Skills"
-              title="Backend, data, and infrastructure toolkit"
-              subtitle="Technology choices focused on scalability, integration reliability, and stable operations."
+              eyebrow="Навыки"
+              title="Технологический стек"
+              subtitle="Инструменты и технологии для разработки, интеграций и поддержки систем."
             />
           </Reveal>
           <div className="grid gap-4 md:grid-cols-2">
@@ -200,9 +199,9 @@ function App() {
         <section id="projects" className="py-20">
           <Reveal>
             <SectionTitle
-              eyebrow="Projects"
-              title="Impact-oriented system products"
-              subtitle="Internal platforms presented through business outcomes: problem, solution, and measurable operational effect."
+              eyebrow="Проекты"
+              title="Ключевые разработки"
+              subtitle="Реализованные системы с фокусом на бизнес-задачи и результат."
             />
           </Reveal>
           <div className="grid gap-5 md:grid-cols-3">
@@ -214,13 +213,13 @@ function App() {
                     <h3 className="text-base font-semibold">{project.name}</h3>
                   </div>
                   <p className="mb-3 text-sm text-slate-200">
-                    <span className="font-medium text-white">Problem:</span> {project.problem}
+                    <span className="font-medium text-white">Проблема:</span> {project.problem}
                   </p>
                   <p className="mb-3 text-sm text-slate-200">
-                    <span className="font-medium text-white">Solution:</span> {project.solution}
+                    <span className="font-medium text-white">Решение:</span> {project.solution}
                   </p>
                   <p className="mb-4 text-sm text-slate-200">
-                    <span className="font-medium text-white">Impact:</span> {project.impact}
+                    <span className="font-medium text-white">Результат:</span> {project.impact}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.stack.map((tech) => (
@@ -237,10 +236,10 @@ function App() {
 
         <section id="education" className="py-20">
           <Reveal>
-            <SectionTitle eyebrow="Education" title="Academic growth trajectory" />
+            <SectionTitle eyebrow="Образование" title="Образование и развитие" />
           </Reveal>
           <div className="grid gap-4 md:grid-cols-3">
-            {["Bachelor", "Master", "PhD (in progress)"].map((stage, idx) => (
+            {["Бакалавр", "Магистр", "Аспирантура (в процессе)"].map((stage, idx) => (
               <Reveal key={stage} delay={idx * 0.08}>
                 <div className="glass-card rounded-2xl p-5">
                   <p className="mb-2 text-xs tracking-[0.2em] text-slate-400 uppercase">Stage {idx + 1}</p>
@@ -255,13 +254,13 @@ function App() {
           <Reveal>
             <div className="glass-card rounded-3xl p-7 md:p-10">
               <SectionTitle
-                eyebrow="Contact"
-                title="Let’s discuss how I can contribute to your engineering team"
-                subtitle="Open to backend engineering opportunities where system reliability, integration quality, and delivery impact matter."
+                eyebrow="Контакты"
+                title="Свяжитесь со мной"
+                subtitle="Открыт к предложениям по backend-разработке и участию в проектах."
               />
               <div className="grid gap-3 md:grid-cols-3">
                 <a
-                  href="https://t.me/username"
+                  href="https://t.me/defeen"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 p-4 transition hover:border-indigo-300/60 hover:bg-white/10"
@@ -270,14 +269,14 @@ function App() {
                   <span className="text-sm">Telegram</span>
                 </a>
                 <a
-                  href="mailto:danil.kakhanov@example.com"
+                  href="mailto:kahanda@icloud.com"
                   className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 p-4 transition hover:border-indigo-300/60 hover:bg-white/10"
                 >
                   <Mail className="h-5 w-5 text-indigo-300" />
                   <span className="text-sm">Email</span>
                 </a>
                 <a
-                  href="https://github.com/your-username"
+                  href="https://github.com/beenkeey"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 p-4 transition hover:border-indigo-300/60 hover:bg-white/10"
@@ -295,10 +294,10 @@ function App() {
         <p>© {new Date().getFullYear()} Данил Каханов</p>
         <div className="flex items-center gap-4">
           <span className="inline-flex items-center gap-1">
-            <Bot className="h-3.5 w-3.5" /> Automation-first
+            <Bot className="h-3.5 w-3.5" /> Автоматизация процессов
           </span>
           <span className="inline-flex items-center gap-1">
-            <Globe className="h-3.5 w-3.5" /> Production systems
+            <Globe className="h-3.5 w-3.5" /> Промышленные системы
           </span>
         </div>
       </footer>
